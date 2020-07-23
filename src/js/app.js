@@ -1,8 +1,12 @@
 import Magician from './Magician';
 import Daemon from './Daemon';
 
-const gendalf = new Magician('Gendalf');
-const morgoth = new Daemon('Morgoth');
+const mag = new Magician('Vasiy');
+const dem = new Daemon('Petiy');
 
-console.log(gendalf);
-console.log(morgoth);
+
+mag.dope = false;
+console.log(mag.attack(2));
+
+dem.dope = true;
+console.log(dem.attack(2));
